@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CFPush</title>
+    <link rel="stylesheet" href="popup.css" />
+    </head>
+
+    <body>
+    <header>
+      <div class="logo">
+        <span class="mark">&gt;_</span>
+        <h1>CFPush</h1>
+      </div>
+      <p class="tag">Codeforces → GitHub</p>
+    </header>
+
+    <main>
+        <label>
+            <span>GitHub Username</span>
+             <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="ghp_ or github_pat_…" />
+              <small>Needs <code>Contents: read/write</code> on the target repo.</small>
+        </label>
+
+        <div class="row">
+        <label class="half">
+          <span>Owner</span>
+          <input id="owner" type="text" autocomplete="off" spellcheck="false" placeholder="your-username" />
+        </label>
+        <label class="half">
+          <span>Repo</span>
+          <input id="repo" type="text" autocomplete="off" spellcheck="false" placeholder="competitive" />
+        </label>
+      </div>
+
+<div class="row">
+        <label class="half">
+          <span>Branch</span>
+          <input id="branch" type="text" autocomplete="off" spellcheck="false" placeholder="main" />
+        </label>
+        <label class="half">
+          <span>Root folder</span>
+          <input id="rootDir" type="text" autocomplete="off" spellcheck="false" placeholder="codeforces" />
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="save" class="primary">Save</button>
+        <button id="test">Test connection</button>
+      </div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+
+    </main>
+     <footer>
+      <p>
+        After saving, solve a problem. On the submissions page, an AC row will
+        sprout a <code>Push</code> button.
+      </p>
+    </footer>
+
+     <script src="popup.js"></script>
+
+    </body>
+
+</html>

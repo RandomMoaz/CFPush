@@ -1,0 +1,25 @@
+:root {
+  --bg: #fafaf7;
+  --ink: #1a1a1a;
+  --mute: #6b6b66;
+  --line: #d9d9d0;
+  --accent: #c0392b; /* Codeforces red */
+  --accent-ink: #8a2a1e;
+  --ok: #2e7d4e;
+  --warn: #b06500;
+  --font-mono: "JetBrains Mono", "SF Mono", "Menlo", "Consolas", monospace;
+  --font-body: "Inter", -apple-system, system-ui, "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15140f;
+    --ink: #ecebe3;
+    --mute: #8a8881;
+    --line: #2f2d27;
+    --accent: #e35b4a;
+    --accent-ink: #f48e80;
+    --ok: #6fcf8f;
+    --warn: #e0a04a;
+  }
+}
